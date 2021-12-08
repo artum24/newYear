@@ -1,4 +1,4 @@
-import {memo, useEffect, useState} from 'react';
+import {memo, useCallback, useEffect, useState} from 'react';
 import DesktopSantaBig from '../assets/payment/desctopBig.svg'
 import DesktopSantaMiddle1 from '../assets/payment/desctopMiddle1.svg'
 import DesktopSantaMiddle2 from '../assets/payment/desctopMiddle2.svg'
@@ -82,11 +82,11 @@ const Payment = () => {
         setMintAmount(newMintAmount);
     };
 
-    const getData = () => {
+    const getData = useCallback(() => {
         if (blockchain.account !== "" && blockchain.smartContract !== null) {
             dispatch(fetchData(blockchain.account));
         }
-    };
+    }, [blockchain.account, dispatch, blockchain.smartContract]);
 
     useEffect(() => {
         getData();

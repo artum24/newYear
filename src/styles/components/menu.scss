@@ -1,0 +1,106 @@
+.menu {
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+    margin: 30px auto 0;
+    position: relative;
+
+    &-info {
+        &-title {
+            font-size: 30px;
+            line-height: 46px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: 'Audiowide', cursive;
+        }
+    }
+
+    &-timer {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        &-item {
+            margin-right: 40px;
+        }
+
+        &-value {
+            background: #01295F;
+            border-radius: 8px;
+            padding: 15px 12px;
+            font-weight: 500;
+            font-size: 52px;
+            line-height: 61px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+    &.mobile {
+        max-width: 100%;
+        justify-content: center;
+        .menu-info-title {
+            font-size: 24px;
+            line-height: 33px;
+            width: calc(100% - 17px);
+        }
+        .menu-timer {
+            margin-top: 100px;
+            justify-content: center;
+            & > div:last-child {
+                margin-right: 0;
+            }
+            &-item {
+                margin-right: 24px;
+            }
+
+            &-value {
+                border-radius: 5px;
+                font-size: 30px;
+                line-height: 36px;
+                margin-bottom: 12px;
+            }
+
+            &-title {
+                font-size: 11px;
+                line-height: 12px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+    }
+    &-santa-smallFirst {
+        position: absolute;
+        border-radius: 50%;
+        top: -35px;
+        right: 80px;
+
+    }
+
+    &-santa-smallSecond {
+        position: absolute;
+        border-radius: 50%;
+        right: 50px;
+        top: 20px;
+    }
+
+    &-santa-medium {
+        position: absolute;
+        border-radius: 50%;
+        right: 0;
+        top: -15px;
+    }
+
+    &-santa-big {
+        position: absolute;
+        right: 0;
+        border-radius: 50%;
+    }
+
+}

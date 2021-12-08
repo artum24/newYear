@@ -1,0 +1,268 @@
+.payment {
+    position: relative;
+    height: calc(100vh - 60px);
+    max-width: 1080px;
+    margin: auto;
+
+    .logo-wrapper {
+        position: absolute;
+        right: -40px;
+        top: -30px;
+    }
+
+    &-images {
+        position: relative;
+        min-height: 500px;
+        height: 100%;
+    }
+
+    .icon {
+        border-radius: 50%;
+        position: absolute;
+
+        &.santa-big {
+            top: 36%;
+            left: 6%;
+            height: 230px;
+        }
+
+        &.santa-smallSecond {
+            height: 120px;
+            top: 10%;
+
+        }
+
+        &.santa-smallThird {
+            right: 50%;
+            top: 8%;
+            height: 140px;
+        }
+
+        &.santa-middleSecond {
+            height: 175px;
+            top: 80%;
+            right: 42%;
+        }
+
+        &.santa-middleFirst {
+            right: 25%;
+            top: 40%;
+            height: 175px;
+        }
+
+        &.santa-small {
+            top: 85%;
+            left: 0;
+            height: 120px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: flex-end;
+        &.active {
+            align-items: center;
+        }
+    }
+
+    &-images {
+        flex-basis: 720px;
+        min-width: 500px;
+    }
+
+    &-info {
+        text-align: center;
+    }
+
+    &-number {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 52px;
+        color: #FEFEFE;
+    }
+
+    &-address {
+        margin: 36px 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: #4381C1;
+    }
+
+    &-cost {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    &-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 36px;
+        &.error {
+            color: #e54e4e;
+        }
+        &.number {
+            margin: 0 20px;
+        }
+    }
+
+    &-connect {
+        border: 4px solid #01295F;
+        border-radius: 4px;
+        padding: 18px 40px;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FEFEFE;
+        margin-top: 36px;
+        cursor: pointer;
+        background: transparent;
+        &:hover {
+            background: #01295F;
+        }
+        &.active {
+            margin-top: 0;
+            border-radius: 10px;
+            background: #01295F;
+            height: 50px;
+            display: flex;
+            width: 50px;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 25px;
+        }
+    }
+    .buy-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 36px;
+        justify-content: center;
+    }
+
+    &-footer {
+        font-size: 14px;
+        line-height: 124.7%;
+        text-align: center;
+        color: #C0C0C0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &.mobile {
+        height: 100%;
+        width: 100%;
+
+        .logo-wrapper {
+            position: relative;
+            right: 0;
+        }
+
+        .logo {
+            width: 80px;
+            height: 40px;
+        }
+
+        .payment-images {
+            position: relative;
+            min-height: 100%;
+            height: 100%;
+            max-width: 375px;
+            min-width: 320px;
+        }
+
+        .icon {
+            &.santa-big {
+                top: 12%;
+                right: 24%;
+                height: 140px;
+                left: auto;
+            }
+
+            &.santa-smallSecond {
+                top: 0;
+                left: 0;
+                height: 106px;
+            }
+
+            &.santa-smallThird {
+                top: -40px;
+                right: 0;
+                height: 106px;
+            }
+
+            &.santa-middleSecond {
+                height: 113px;
+                top: 43%;
+                left: 3%;
+            }
+
+            &.santa-middleFirst {
+                right: 0;
+                top: 48%;
+                height: 113px;
+            }
+
+            &.santa-small {
+                top: 73%;
+                left: 40%;
+                height: 70px;
+            }
+        }
+
+        .payment-content {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .payment-images {
+            flex-basis: 100%;
+            min-height: 35vh;
+        }
+
+        .payment-number {
+            margin-top: 21px;
+            font-size: 42px;
+            line-height: 49px;
+        }
+
+        .payment-address {
+            margin: 21px 0;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .payment-cost {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        .payment-title {
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 25px;
+            &.error {
+                color: #e54e4e;
+            }
+            &.number {
+                margin-top: 0;
+            }
+        }
+
+        .payment-connect {
+            margin-bottom: 40px;
+            &.active {
+                margin-bottom: 0;
+            }
+        }
+
+        .payment-footer {
+            font-size: 9px;
+            line-height: 11px;
+            text-align: center;
+            color: #C0C0C0;
+            position: relative;
+        }
+    }
+}

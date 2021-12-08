@@ -1,0 +1,28 @@
+@import "./components/header";
+@import "./components/menu.scss";
+@import "./components/about.scss";
+@import "./components/roadMap.scss";
+@import "./components/team.scss";
+@import "./components/specs.scss";
+@import "./components/collection.scss";
+@import "./components/faq.scss";
+@import "./components/payment.scss";
+
+
+body {
+    margin: 0;
+}
+
+.app {
+    margin: 0;
+    padding: 40px 70px 20px;
+    background: #000;
+    background-image: url('../assets/Snow.svg');
+    @media screen and (max-width: 992px){
+        padding: 40px 20px 20px;
+    }
+}
+
+p {
+    margin: 0;
+}

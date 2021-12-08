@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 40px 20px 0;
+    background: #000;
+    background-image: url('../../assets/Snow.svg');
+
+    &-titles {
+        display: flex;
+    }
+
+    &-item {
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-left: 45px;
+    }
+
+    &.active {
+        height: 0;
+
+        .header-mobile-logo {
+            height: 0;
+        }
+
+        .header-mobile-burger {
+            height: 0;
+        }
+    }
+
+    &-mobile {
+        &-logo {
+            width: 80px;
+            height: 35px;
+        }
+    }
+
+    &-menu {
+        background: #1A1A1A;
+        padding: 20px 40px 12px;
+
+        &-close {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-list {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        &-item {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            color: #ffff;
+        }
+    }
+}

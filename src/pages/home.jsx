@@ -1,12 +1,12 @@
 import {useMemo, memo} from 'react';
-import Header from "../components/header";
-import Menu from "../components/menu";
-import About from "../components/about";
-import Collection from "../components/collection";
-import RoadMap from "../components/roadMap";
-import Team from "../components/team";
-import Specs from "../components/specs";
-import Faq from "../components/faq";
+import Header from "../components/header/Header";
+import Menu from "../components/menu/Menu";
+import About from "../components/about/About";
+import Collection from "../components/collection/Collection";
+import RoadMap from "../components/roadMap/RoadMap";
+import Team from "../components/team/Team";
+import Specs from "../components/specs/Specs";
+import Faq from "../components/faq/faq";
 
 const Home = () => {
     const titles = useMemo(() => [

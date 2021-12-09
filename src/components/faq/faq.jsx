@@ -15,15 +15,15 @@ const Faq = () => {
     }, [activeFaq])
     const data = useMemo(() => [
         {
-            heading: '1.What is a MetaChristmas',
+            heading: 'What is a MetaChristmas',
             content: 'Is an NFT collection of 10k unique and original Santas with over 100 of elements.',
         },
         {
-            heading: '2.What\'s the total number available to mint?',
+            heading: 'What\'s the total number available to mint?',
             content: '10000 thousands unique and original Santas will be available to claim your very own Santa!'
         },
         {
-            heading: '3.How much will Santa’s cost?',
+            heading: 'How much will Santa’s cost?',
             content: (
                 <>
                     <p> -We will be announcing the price before the launch date, please follow us on Discord and Twitter
@@ -35,7 +35,7 @@ const Faq = () => {
             )
         },
         {
-            heading: '4.When the MetaChristmas mint?',
+            heading: 'When the MetaChristmas mint?',
             content: (
                 <>
                     <p>We will be announcing the official date soon, please check our Discord and Twitter accounts for
@@ -49,7 +49,7 @@ const Faq = () => {
             )
         },
         {
-            heading: '5.How can I get the Whitelist spot?',
+            heading: 'How can I get the Whitelist spot?',
             content: (
                 <>
                     <p>To claim whitelist spots you have different ways:</p>
@@ -63,11 +63,11 @@ const Faq = () => {
             )
         },
         {
-            heading: '6.When is the reveal date?',
+            heading: 'When is the reveal date?',
             content: 'The reveal date is after24 hours from public sale is started  or 12 hours after sold out.'
         },
         {
-            heading: '7.How many Santa NFTs can I mint?',
+            heading: 'How many Santa NFTs can I mint?',
             content: (
                 <>
                     <p>Limit for Pre-Sale: 1 NFT per person</p>
@@ -76,7 +76,7 @@ const Faq = () => {
             )
         },
         {
-            heading: '8.Will there be any drops and privileges for NFT owners?',
+            heading: 'Will there be any drops and privileges for NFT owners?',
             content: 'Santas are just the beginning! These is only main character of the our Metaverse, Santa is not working alone he has team to make happy people all over the world. Just imagine how many additions we will create for the community of the MetaChristmas! Take a close look at the big picture. We left a lot of hints there for you...'
         },
     ], []);

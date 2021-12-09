@@ -120,7 +120,7 @@ const Payment = () => {
                                 <p className="payment-cost">1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}{CONFIG.NETWORK.SYMBOL}.</p>
                                 <p className="payment-title">Excluding gas fees.</p>
                                 {blockchain.account === "" ||
-                                blockchain.smartContract !== null ? (
+                                blockchain.smartContract === null ? (
                                     <>
                                         <p className="payment-title">Connect to the {CONFIG.NETWORK.NAME} Network</p>
                                         <div className="payment-connect" onClick={(e) => {

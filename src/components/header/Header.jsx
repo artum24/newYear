@@ -57,7 +57,9 @@ const Header = ({titles, isHeader}) => {
                                     <div className="header-item">{item.title}</div>
                                 </Link>
                             ) : (
-                                <div className="header-item" key={item.title}>{item.title}</div>
+                                <a className="header-item" href={item.link}>
+                                    {item.title}
+                                </a>
                             )}
                         </>
                     ))}

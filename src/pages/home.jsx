@@ -28,15 +28,15 @@ const Home = () => {
         },
         {
             title: 'Opensea',
-            action: () => {}
+            link: 'https://twitter.com/Meta__Christmas\','
         },
         {
             title: ' Twitter',
-            action: () => {}
+            link: 'https://twitter.com/Meta__Christmas',
         },
         {
             title: 'Discord',
-            action: () => {}
+            action: 'https://discord.gg/scvwKaqN'
         },
     ], [])
     return (
